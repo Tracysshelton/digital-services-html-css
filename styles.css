@@ -241,16 +241,6 @@ div[class*=box] {
     text-decoration: none;
 }
 
-/* large screen, 1200px and up */
-@media screen and (min-width: 1200px) {
-    
-}
-
-/* laptop and desktop, 992px to 1200px */
-@media screen and (min-width:992px) {
-    
-}
-
 /* landscape tablets, 768px to 992px */
 @media screen and (max-width: 768px) {
     .nav > .nav-btn {
@@ -260,23 +250,23 @@ div[class*=box] {
         top: 20px;
         border: black solid 2px;
         border-radius: 10%;
-      }
-      .nav > .nav-btn > label {
+    }
+    .nav > .nav-btn > label {
         display: inline-block;
         width: 50px;
         height: 50px;
         padding: 13px;
-      }
-      .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
         background-color: rgba(0, 0, 0, 0.3);
-      }
-      .nav > .nav-btn > label > span {
+    }
+    .nav > .nav-btn > label > span {
         display: block;
         width: 25px;
         height: 10px;
         border-top: 2px solid #000;
-      }
-      .nav > .nav-links {
+    }
+    .nav > .nav-links {
         position: absolute;
         display: block;
         width: 100%;
@@ -288,20 +278,28 @@ div[class*=box] {
         overflow-y: hidden;
         top: 100px;
         left: 0px;
-      }
-      .nav > .nav-links > a {
+    }
+    .nav > .nav-links > a {
         display: block;
         width: 100%;
         color: #fff;
-      }
+    }
       .nav > #nav-check:not(:checked) ~ .nav-links {
         height: 0px;
-      }
-      .nav > #nav-check:checked ~ .nav-links {
+    }
+    .nav > #nav-check:checked ~ .nav-links {
         height: calc(100vh - 50px);
         overflow-y: auto;
         z-index: 9999;
-      }
+    }
+
+    /* stacking the call to action button */
+    .cta-buttons{
+        flex-direction: column;
+    }
+    .cta-buttons div{
+        margin: 10px auto;
+    }
 
       /* footer */
     .footer{
@@ -317,17 +315,4 @@ div[class*=box] {
     }
 }
 
-/* portrait tablets and large phonhe, 600px to 768px */
-@media  screen and (max-width: 767px) {
-    .cta-buttons{
-        flex-direction: column;
-    }
-    .cta-buttons div{
-        margin: 10px auto;
-    }
-}
 
-/*  small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
-    
-}

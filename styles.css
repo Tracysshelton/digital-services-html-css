@@ -241,7 +241,7 @@ div[class*=box] {
     text-decoration: none;
 }
 
-/* portrait tablets and phones, 768px to 992px */
+/* portrait tablets and phones, 768px and down */
 @media screen and (max-width: 768px) {
     .nav > .nav-btn {
         display: inline-block;

@@ -9,7 +9,7 @@ body{
     font-family: sans-serif;
 }
 .bg-bluish-gray{
-    background-color: #657b87;
+    background-color: #717d96;
 }
 
 /* header */
@@ -55,7 +55,7 @@ body{
 /* content */
 /* CTA */
 .cta{
-    background-color: #d2d9dd;
+    background-color: #edf0f7;
     padding: 35px 15px;
     border-bottom: #333 solid 2px;
 }
